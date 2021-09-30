@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT dataset (events*,users*,eventuser*)>
+<!ELEMENT events EMPTY>
+<!ELEMENT users EMPTY>
+<!ELEMENT eventuser EMPTY>
+<!ATTLIST events
+    id CDATA #IMPLIED
+    name CDATA #IMPLIED
+    description CDATA #IMPLIED
+    location CDATA #IMPLIED
+    day CDATA #IMPLIED
+    tag CDATA #IMPLIED
+    capacity CDATA #IMPLIED
+    important CDATA #IMPLIED
+    image CDATA #IMPLIED
+    organizer CDATA #IMPLIED
+>
+<!ATTLIST users
+    id CDATA #IMPLIED
+    login CDATA #IMPLIED
+    password CDATA #IMPLIED
+>
+<!ATTLIST eventuser
+    userid CDATA #IMPLIED
+    eventid CDATA #IMPLIED
+>

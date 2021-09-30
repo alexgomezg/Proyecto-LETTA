@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>LETTA Project</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <link href="css\style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Launch demo modal
+    </button>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-fullscreen-sm-down modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">LEttA</h5>
+                    <button type="button" id="closeModal" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert" role="alert" id="modalText">
+                        <div class="mx-3 mt-3">
+                            <form id="form-singin">
+                                <h2 class="mb-3 text-center">Crear nuevo evento</h2>
+
+                                <div class="row  mb-3">
+                                    <div class="col">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="eventName" placeholder="Usuario"
+                                                required>
+                                            <label for="eventName">Nombre del Evento</label>
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="col-md-auto d-flex align-items-center">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">Importante</label>
+                                        </div>
+                                    </div>
+                                  </div>
+
+                                <div class="form-floating mb-3">
+                                    <textarea cols="40" class="form-control" id="eventDescription"
+                                        placeholder="Descripcion" required style="height: 150px"></textarea>
+                                    <label for="eventDescription">Descripcion</label>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="eventLocation" placeholder="Ciudad"
+                                                aria-describedby="eventLocationIcon" required>
+                                            <label for="eventLocation">Ciudad</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-floating mb-3">
+                                            <input type="date" class="form-control" id="eventDate" placeholder="Fecha" required>
+                                            <label for="eventDate">Fecha</label>
+                                        </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="row mb-3">
+                                    <div class="col-4">
+                                        <div class="form-floating ">
+                                            <input type="number" class="form-control" id="eventPeople" placeholder="Aforo"
+                                                required>
+                                            <label for="eventPeople">Aforo</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                            <select class="form-select form-select-lg" aria-label="Default select example" id="eventTag">
+                                                <option selected>Etiqueta</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                    </div>
+                                  </div>
+
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Imagen</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+
+                                <div class="d-flex justify-content-end">
+                                    <button type="button" class="btn btn-lg btn-secondary btn-block mt-2"
+                                        id="enterButton">Crear</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
